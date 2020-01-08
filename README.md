@@ -209,6 +209,7 @@ that config.
 - [intelephense](#intelephense)
 - [leanls](#leanls)
 - [ocamlls](#ocamlls)
+- [swi-prolog](#swi-prolog)
 - [pyls](#pyls)
 - [pyls_ms](#pyls_ms)
 - [rls](#rls)
@@ -1382,6 +1383,23 @@ require'nvim_lsp'.ocamlls.setup{}
     log_level = 2
     root_dir = root_pattern(".merlin", "package.json")
     settings = {}
+```
+
+## swi-prolog
+
+https://github.com/jamesnvc/lsp_server
+
+`swi-prolog` must be installed manually:
+
+```prolog
+?- pack_install(lsp_server).
+```
+
+```lua
+require'nvim-lsp'.swiprolog.setup{}
+
+	Default Values:
+		TBD
 ```
 
 ## pyls
